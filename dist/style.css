@@ -1,0 +1,317 @@
+body {
+  font-family: "Lato", sans-serif;
+  background-color: #dff5ec;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  max-width: 1280px;
+  margin: 0 auto; /* to bring itself on the middle of the screen */
+  padding: 0 20px;
+  position: relative;
+}
+
+/* Header */
+#header {
+  display: flex;
+  max-width: 100%;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px 20px; /* changed */
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  background-color: #fcb6a7;
+}
+
+.logo {
+  display: flex;
+}
+
+.logo img {
+  width: 100%; 
+}
+
+#nav-bar {
+  display: flex;
+  flex-grow: 1;
+  min-height: 80px;
+  align-items: center;
+}
+
+#nav-bar ul {
+  text-align: center;
+  padding: 0;
+}
+
+#nav-bar ul li {
+  display: block;
+  margin-bottom: 0px; /*space between each other*/
+}
+
+/* Nav links */
+#nav-bar ul li a {
+  color: #000000;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+#centerlogo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 100px;
+  }
+
+/* Form */
+.form {
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 0px; /* changed */
+}
+
+.form h2 {
+  font-size: 30px;
+}
+.form form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 430px;
+  width: 100%;
+}
+
+.form form input {
+  display: block;
+}
+
+.form form input:first-child {
+  margin-bottom: 15px; /* changed */
+  max-width: 300px;
+  background-color: #ffffff;
+  padding: 5px;
+  width: 100%;
+}
+
+.form form input:last-child {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  background-color: #e89c8b;
+  padding: 4px 20px;
+  font-weight: bold;
+  font-size: 20px;
+  color: #1a1a1a; /* added */
+  border: none; /* by default the button has a border*/
+  border-radius: 8px;
+}
+
+.lafeteteam {
+  text-align: center;
+  margin-left: 250px;
+  margin-right: 250px;
+}
+
+/* Features */
+#features {
+  max-width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#featuresbox {
+  padding: 20px;
+  padding-left: 100px;
+  padding-right: 100px;
+  margin: 70px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background: rgba(255, 255, 255, 0.5)
+}
+
+#features .card {
+  display: flex;
+  align-items: center;
+}
+
+#features .card .icon {
+  max-width: 100px;
+  width: 100%;
+  color: #e89c8b;
+  display: none;
+  text-align: center;
+  justify-content: center;
+}
+
+#features .card .content {
+  flex-grow: 1;
+  text-align: center;
+}
+
+/* How it works */
+h2 {  
+  font-weight: lighter;
+  font-weight: bolder;
+}
+
+/* Need to solve */
+.girls {
+  text-align: center;
+  background-color: #e89c8b;  
+  margin-top: 40px;  
+  padding: 10px;
+  border-radius: 8px
+}
+
+.boys {
+  text-align: center;
+  background-color: #97c2b0;
+  margin-top: 50px;
+  margin-bottom: 30px;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+#how-it-works {
+  max-width: 100%;
+  margin: 50px auto;
+  margin-top: 10px;
+}
+
+/* ======== Pricing ========*/
+#pricing {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+#pricing .card {
+  margin: 0 auto;
+  margin-bottom: 15px;
+  border: 1px solid #000;
+  max-width: 340px;
+  width: 100%;
+  border-radius: 3px;
+  text-align: center;
+}
+
+#pricing .card h2 {
+  background-color: #c1ded2;
+  color: black;
+  padding: 15px 0;
+  width: 100%;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 20px;
+  margin: 0;
+  margin-bottom: 15px;
+}
+
+#itemimage {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+}
+
+#pricing .card strong {
+  font-size: 22px;
+}
+
+#pricing .card button {
+  border: 0;
+  margin-bottom: 15px;
+  background-color: #e89c8b;
+  padding: 8px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+/* Footer */
+footer {
+  padding: 10px;
+  padding-top: 1px;
+  padding-bottom: 30px;
+  margin-top: 30px;
+  text-align: center;
+  background-color: #c1ded2;
+}
+
+footer > ul {
+  padding: 0;
+}
+
+footer > ul li {
+  display: inline;  
+}
+
+/* will apply a right margin to all items in the list except the last one */
+footer > ul li:not(last-child) {
+  margin-right: 10px;
+  float: left;
+}
+
+footer > ul li:last-child {
+  float: right; /* to place the element to the right corner */
+  right: 0;
+}
+
+footer > ul li a {
+  color: #000;
+  text-decoration: none;
+}
+
+/*  Media query - diferent styling for large size*/
+@media (min-width: 550px) {
+  #featuresbox {
+    padding: 0px;
+  }
+  #features .card .icon {
+    display: block;
+  }
+
+  #features .card .content {
+    text-align: left;
+  }
+}
+
+@media (min-width: 600px) {
+  #header {
+    flex-direction: row;
+    left: 5%;
+    right: 5%;
+  }
+
+  #nav-bar ul {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  #nav-bar ul li {
+    display: inline;
+    margin-right: 50px;
+  }
+
+  #nav-bar ul li:last-child {
+    margin-right: 0;
+  }
+}
+
+@media (min-width: 800px) {
+  #pricing {
+    flex-direction: row;
+    align-self: center;
+  }
+
+  #pricing .card:not(last-child) {
+    margin-right: 15px;
+  }
+}
